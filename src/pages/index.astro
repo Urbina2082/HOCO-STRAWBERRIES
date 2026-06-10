@@ -12,11 +12,11 @@ import Footer from "../sections/Footer.astro";
 ---
 
 <Layout>
-  <Header />
-  <Locations />
-  <Menu />
-  <Gallery />
-  <Flash/>
-  <Redes/>
-  <Footer/>
-</Layout>
+  <Header client:visible />
+  <Locations client:visible />
+  <Menu client:visible />
+  <Gallery client:visible />
+  <Flash client:visible/>
+  <Redes client:visible/>
+  <Footer client:visible/>
+</Layout >

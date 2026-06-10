@@ -1,12 +1,14 @@
 ---
-const { sucursal, description, horario } = Astro.props;
+const { link, sucursal, description, horario } = Astro.props;
 ---
 
-<article class="branch-card">
-  <div class="branch-icon">📍</div><h3>{sucursal}</h3><p>
-    {description}
-  </p><small>{horario}</small>
-</article>
+<a href={link}>
+  <article class="branch-card">
+    <div class="branch-icon">📍</div><h3>{sucursal}</h3><p>
+      {description}
+    </p><small>{horario}</small>
+  </article></a
+>
 
 <style>
   .branch-card {
@@ -22,6 +24,10 @@ const { sucursal, description, horario } = Astro.props;
     overflow: hidden;
   }
 
+  a {
+    text-decoration: none;
+    list-style: none;
+  }
   .branch-card:before {
     content: "";
     position: absolute;

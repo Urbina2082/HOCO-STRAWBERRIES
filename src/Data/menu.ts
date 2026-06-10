@@ -8,99 +8,66 @@ type Menu = {
     items: {
       name: string;
       datails: string;
-      price: String;
+      price: string;
     }[];
   }[];
 };
 
 export const menu: Menu[] = [
   {
-    id: "Smoothies-&-Aguas",
-    name: "Smoothies & Aguas",
-    description: "Smoothies $65 | Aguas $55",
+    id: "Bebidas",
+    name: "Bebidas",
+    description: "Frappes $80 | Smoothies $70 | Aguas $55",
     grups: [
       {
         id: 1,
-        title: "Smoothies",
+        title: "Frappes",
         items: [
-          {
-            name: "Oreo",
-            datails: "Leche, oreo, vainilla, chispas, chocomilk y hershey.",
-            price: "$65",
-          },
-          {
-            name: "PicaFresa",
-            datails: "Agua, fresas, pica fresa, chamoy y tico.",
-            price: "$65",
-          },
-          {
-            name: "Mangonada",
-            datails: "Agua, mango, chamoy, tico y tajín.",
-            price: "$65",
-          },
-          {
-            name: "ManFresh",
-            datails: "Leche, mango, fresas y azúcar.",
-            price: "$65",
-          },
-          {
-            name: "RedSummer",
-            datails: "Yogurth, frutos rojos y azúcar.",
-            price: "$65",
-          },
-          {
-            name: "Chocobanana",
-            datails: "Leche, plátano, chocomilk y hershey.",
-            price: "$65",
-          },
-          {
-            name: "Berry Paradais",
-            datails: "Leche, fresas, plátano y azúcar.",
-            price: "$65",
-          },
-          {
-            name: "Straw",
-            datails: "Fresa, leche y azúcar.",
-            price: "$65",
-          },
-          {
-            name: "Gansito",
-            datails: "Gansito, leche, jarabe de fresa y chocomilk.",
-            price: "$65",
-          },
+          { name: "Oreo", datails: "Frappe sabor oreo.", price: "$80" },
+          { name: "Fresa", datails: "Frappe sabor fresa.", price: "$80" },
+          { name: "Gansito", datails: "Frappe sabor gansito.", price: "$80" },
+          { name: "Pinguino", datails: "Frappe sabor pingüino.", price: "$80" },
+          { name: "Ferrero", datails: "Frappe sabor ferrero.", price: "$80" },
         ],
       },
       {
         id: 2,
+        title: "Smoothies",
+        items: [
+          { name: "Mangonada", datails: "Agua, mango, chamoy, tico y tajín.", price: "$70" },
+          { name: "PicaFresa", datails: "Agua, fresas, pica fresa, chamoy y tico.", price: "$70" },
+          { name: "StrawberryMilk", datails: "Fresa, leche y azúcar.", price: "$70" },
+          { name: "Berry Paradais", datails: "Leche, fresas, plátano y azúcar.", price: "$70" },
+          { name: "RedSummer", datails: "Yogurth, frutos rojos y azúcar.", price: "$70" },
+          { name: "Chocobanana", datails: "Leche, plátano, chocomilk y hershey.", price: "$70" },
+          { name: "ManFresh", datails: "Leche, mango, fresas y azúcar.", price: "$70" },
+        ],
+      },
+      {
+        id: 3,
         title: "Aguas",
         items: [
-          {
-            name: "Limonada",
-            datails: "Agua, limón y azúcar.",
-            price: "$55",
-          },
-          {
-            name: "Pepinada",
-            datails: "Agua, pepino, limón y azúcar.",
-            price: "$55",
-          },
-          {
-            name: "Mango",
-            datails: "Agua, mango y azúcar.",
-            price: "$55",
-          },
-          {
-            name: "Fresada",
-            datails: "Agua, fresa y azúcar.",
-            price: "$55",
-          },
+          { name: "Embotellada", datails: "Agua natural embotellada.", price: "$10" },
+          { name: "Fresada", datails: "Agua, fresa y azúcar.", price: "$55" },
+          { name: "Mango", datails: "Agua, mango y azúcar.", price: "$55" },
+          { name: "Pepinada", datails: "Agua, pepino, limón y azúcar.", price: "$55" },
+          { name: "Limonada", datails: "Agua, limón y azúcar.", price: "$55" },
+        ],
+      },
+      {
+        id: 4,
+        title: "Extras",
+        items: [
+          { name: "Coca Cola 600ml", datails: "Refresco.", price: "$25" },
+          { name: "Starbucks", datails: "Bebida Starbucks.", price: "$50" },
+          { name: "Vaso de hielo", datails: "Vaso extra con hielo.", price: "$10" },
         ],
       },
     ],
   },
   {
     id: "Fresas",
-    name: "Fresas",
+    name: "Vaso Fresero",
     description: "Fresas con crema y toppings",
     grups: [
       {
@@ -108,82 +75,68 @@ export const menu: Menu[] = [
         title: "Fresas",
         items: [
           {
-            name: "Fresas con Crema",
+            name: "Fresas con Crema Tradicionales",
             datails: "Fresas con crema casera.",
-            price: "CH $45 | M $70 | G $95 | L $195",
-          },
-          {
-            name: "FresaChees",
-            datails: "Fresas, crema y trozos de cheesecake.",
-            price: "CH $65 | M $90 | G $115 | L $220",
-          },
-          {
-            name: "FresaFlan",
-            datails: "Fresas, crema y trozos de flan.",
-            price: "CH $65 | M $90 | G $115 | L $220",
-          },
-          {
-            name: "FresaBrow",
-            datails: "Fresas, crema y trozos de brownie.",
-            price: "CH $60 | M $85 | G $110 | L $215",
+            price: "CH $50 | M $75 | G $100 | L $200",
           },
           {
             name: "FresaChoco",
             datails: "Fresas con avellana.",
-            price: "CH $65 | M $85 | G $110 | L $215",
+            price: "CH $65 | M $85 | G $115 | L $220",
           },
           {
-            name: "Fresas Dubai",
+            name: "FresaChees",
+            datails: "Fresas, crema y trozos de cheesecake.",
+            price: "CH $70 | M $90 | G $120 | L $230",
+          },
+          {
+            name: "FresaFlan",
+            datails: "Fresas, crema y trozos de flan.",
+            price: "CH $70 | M $90 | G $120 | L $230",
+          },
+          {
+            name: "FresaBrow",
+            datails: "Fresas, crema y trozos de brownie.",
+            price: "CH $70 | M $90 | G $120 | L $230",
+          },
+          {
+            name: "Fresas Raffaello, Lotus y Ferrero",
+            datails: "Especialidad con galletas y chocolates.",
+            price: "CH $75 | M $110 | G $140 | L $280",
+          },
+          {
+            name: "Fresas Dubái",
             datails: "Fresas, crema, pistacho y avellana.",
-            price: "CH $80 | M $110 | G $160",
+            price: "CH $80 | M $120 | G $170 | L $330",
           },
         ],
       },
       {
         id: 2,
-        title: "Toppings",
+        title: "Toppings y Jarabes",
         items: [
           {
-            name: "Topping Extra",
-            datails: "Nuez, lunetas, chispas, almendra, oreo, kranky, mango, granola, barquillo, crema batida y cereal.",
-            price: "$8",
+            name: "Toppings Extras",
+            datails: "Nuez, Lunetas, Chispas, Almendra, Oreo, Kranky, Mango, Granola, Crema batida.",
+            price: "$10",
           },
           {
             name: "Jarabe Extra",
-            datails: "Fresa, hershey, lechera y cajeta.",
+            datails: "Lechera, Cajeta, Fresa, Chocolate.",
             price: "$5",
           },
         ],
       },
       {
         id: 3,
-        title: "Premium",
+        title: "Topping Premium",
         items: [
-          {
-            name: "Avellana",
-            datails: "Ingrediente premium extra.",
-            price: "$10",
-          },
-          {
-            name: "Nieve",
-            datails: "Ingrediente premium extra.",
-            price: "$10",
-          },
-          {
-            name: "Cheesecake",
-            datails: "Ingrediente premium extra.",
-            price: "$25",
-          },
-          {
-            name: "Flan",
-            datails: "Ingrediente premium extra.",
-            price: "$20",
-          },
-          {
-            name: "Brownie",
-            datails: "Ingrediente premium extra.",
-            price: "$15",
-          },
+          { name: "Nieve", datails: "Bola de nieve extra.", price: "$15" },
+          { name: "Cheescake, flan o brownie", datails: "Rebanada extra.", price: "$25" },
+          { name: "Bubulubu", datails: "Chocolate extra.", price: "$20" },
+          { name: "Kinder", datails: "Chocolate premium extra.", price: "$30" },
+          { name: "Gansito, pingüino", datails: "Pastelito extra.", price: "$12" },
+          { name: "Magnum", datails: "Paleta extra.", price: "$30" },
         ],
       },
     ],
@@ -191,7 +144,7 @@ export const menu: Menu[] = [
   {
     id: "Crepas",
     name: "Crepas",
-    description: "Crepas dulces y saladas",
+    description: "Crepas dulces, saladas y arma tu crepa",
     grups: [
       {
         id: 1,
@@ -204,28 +157,28 @@ export const menu: Menu[] = [
           },
           {
             name: "Oreo",
-            datails: "Oreo, Philadelphia, avellana, lechera y crema batida.",
-            price: "$75",
+            datails: "Oreo, Philadelphia, avellana, lechera.",
+            price: "$80",
           },
           {
             name: "Kinder",
-            datails: "Philadelphia, avellana, fresa, kinder y jarabe lechera.",
-            price: "$85",
-          },
-          {
-            name: "FresMan",
-            datails: "Avellana, fresa, mango y jarabe lechera.",
-            price: "$75",
-          },
-          {
-            name: "FresaMIX",
-            datails: "Fresas, plátano, avellana y jarabe lechera.",
-            price: "$75",
+            datails: "Philadelphia, avellana, fresa, kinder.",
+            price: "$90",
           },
           {
             name: "Bubulubu",
-            datails: "Bubulubu, avellana, jarabe de fresa y fresas.",
+            datails: "Avellana, fresas, bubulubu.",
             price: "$85",
+          },
+          {
+            name: "FresaMix",
+            datails: "Fresa, plátano, avellana.",
+            price: "$75",
+          },
+          {
+            name: "FresaMan",
+            datails: "Fresa, mango, lechera.",
+            price: "$75",
           },
         ],
       },
@@ -235,99 +188,153 @@ export const menu: Menu[] = [
         items: [
           {
             name: "Peperoni",
-            datails: "Peperoni, salsa tomate, 2 quesos y ranch.",
+            datails: "Salsa tomate, peperoni, 2 quesos.",
             price: "$85",
           },
           {
             name: "Hawaiana",
-            datails: "2 quesos, piña, jamón, salsa tomate y ranch.",
+            datails: "Salsa tomate, piña, 2 quesos.",
             price: "$85",
+          },
+        ],
+      },
+      {
+        id: 3,
+        title: "Arma Tu Crepa",
+        items: [
+          {
+            name: "Clásica",
+            datails: "1 ingrediente a elegir (Incluye 1 jarabe).",
+            price: "$60",
+          },
+          {
+            name: "Especial",
+            datails: "2 ingredientes a elegir (Incluye 1 jarabe).",
+            price: "$75",
+          },
+          {
+            name: "Premium",
+            datails: "4 ingredientes a elegir (Incluye 1 jarabe).",
+            price: "$90",
+          },
+          {
+            name: "Ingrediente Extra",
+            datails: "Añade un ingrediente adicional a tu crepa.",
+            price: "$15",
           },
         ],
       },
     ],
   },
   {
-    id: "K-Mex-Menu",
-    name: "K-Méx Menu",
-    description: "Snacks coreanos y bebidas",
+    id: "The-Full-Mix",
+    name: "The Full Mix",
+    description: "Deli Fresh & Hocombos",
     grups: [
       {
         id: 1,
-        title: "Especialidades",
+        title: "Deli Fresh",
+        items: [
+          { name: "Sandwich", datails: "Sándwich preparado fresco.", price: "$55" },
+          { name: "Ensalada grande", datails: "Ensalada fresca con aderezos.", price: "$110" },
+        ],
+      },
+      {
+        id: 2,
+        title: "Hocombos",
+        items: [
+          { name: "K-Combo", datails: "Sandwich + smothie.", price: "$110" },
+          { name: "Combo Crepe", datails: "Crepa Clasica + Smothie.", price: "$115" },
+          { name: "Combo Lunes", datails: "2 Fresas M (flan, brownie, cheescake).", price: "$165" },
+          { name: "Combo Miércoles", datails: "1 Fresas M (Ferrero, lotus, rafaello) + 1 Frappe a elegir.", price: "$175" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "Korea-Menu",
+    name: "Korea Menú",
+    description: "K-Food, Snacks y Bebidas Coreanas",
+    grups: [
+      {
+        id: 1,
+        title: "K-Food",
         items: [
           {
             name: "RamenElote",
-            datails: "Buldak con elote y chettos a elegir.",
+            datails: "Buldak + elote preparado + frituras a elegir.",
             price: "$150",
           },
           {
             name: "MaruchaElote",
-            datails: "Maruchan con elote y chettos a elegir.",
+            datails: "Maruchan + elote preparado + frituras a elegir.",
             price: "$100",
+          },
+          {
+            name: "Ramen + Mozarella",
+            datails: "Ramen coreano con queso mozarella.",
+            price: "$70",
+          },
+          {
+            name: "Ramen",
+            datails: "Ramen coreano tradicional.",
+            price: "$55",
+          },
+          {
+            name: "Maruchan",
+            datails: "Sopa Maruchan clásica.",
+            price: "$25",
+          },
+          {
+            name: "Tteokbokki buldak",
+            datails: "Tteokbokki con salsa buldak.",
+            price: "$130",
+          },
+          {
+            name: "Yopokki",
+            datails: "Snack coreano Yopokki.",
+            price: "$75",
+          },
+          {
+            name: "Rapokki",
+            datails: "Snack coreano Rapokki.",
+            price: "$85",
           },
         ],
       },
       {
         id: 2,
-        title: "Tteokbokki House",
+        title: "CheeseSnack",
         items: [
           {
-            name: "Rapokki Hot & Spicy",
-            datails: "Rapokki picante.",
-            price: "$85",
+            name: "Fritos + queso",
+            datails: "Frituras bañadas en queso.",
+            price: "$50",
           },
           {
-            name: "Rapokki Sweet & Spicy",
-            datails: "Rapokki dulce y picante.",
-            price: "$85",
-          },
-          {
-            name: "Rapokki Cheese",
-            datails: "Rapokki con queso.",
-            price: "$85",
-          },
-          {
-            name: "Rapokki Kimchi",
-            datails: "Rapokki con kimchi.",
-            price: "$85",
-          },
-          {
-            name: "Tteokbokki Sweet & Spicy",
-            datails: "Tteokbokki dulce y picante.",
-            price: "$70",
-          },
-          {
-            name: "Tteokbokki Kimchi",
-            datails: "Tteokbokki con kimchi.",
-            price: "$70",
-          },
-          {
-            name: "Tteokbokki Carbonara",
-            datails: "Tteokbokki carbonara. Agrega queso mozzarella por $15.",
-            price: "$130",
+            name: "Fritos + queso + elote",
+            datails: "Frituras bañadas en queso con elote.",
+            price: "$60",
           },
         ],
       },
       {
         id: 3,
-        title: "K-Ice Drinks",
+        title: "Korea Iced",
         items: [
           {
-            name: "Watermelon K-Ice",
-            datails: "Bebida coreana sabor sandía.",
+            name: "Korea Iced (Bebida coreana + vaso hielo)",
+            datails: "Sabores: Uva verde, Fresa, Blueberry, Sandía, Piña, Manzana, Durazno, Limon.",
             price: "$60",
           },
-          {
-            name: "Apple K-Ice",
-            datails: "Bebida coreana sabor manzana.",
-            price: "$60",
-          },
-          {
-            name: "K-Berry Ice",
-            datails: "Bebida coreana sabor frutos rojos.",
-            price: "$60",
-          },
+        ],
+      },
+      {
+        id: 4,
+        title: "Extras",
+        items: [
+          { name: "Queso mozarella", datails: "Queso extra.", price: "$15" },
+          { name: "Vaso con hielo", datails: "Hielo extra.", price: "$10" },
         ],
       },
     ],

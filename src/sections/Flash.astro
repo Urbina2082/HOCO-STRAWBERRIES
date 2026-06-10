@@ -1,5 +1,8 @@
 ---
 import InitialSection from "../components/InitialSection.astro";
+
+
+
 ---
 
 <div class="Flash">
@@ -8,7 +11,7 @@ import InitialSection from "../components/InitialSection.astro";
       TypeSection="FRESA FLASH"
       title="Promocion"
       titlespan="Flash"
-      description="Una muestra visual del estilo HOCO strawberries."
+      description="Disfruta de este beneficio en la sucursal de tu preferencia, presentando esta pantalla al momento de su visita."
     />
   </div>
   <!-- pq aqui no vas  a sacar nada -->
@@ -112,6 +115,41 @@ import InitialSection from "../components/InitialSection.astro";
     </div>
   </div>
 </div>
+
+
+<script>
+  const fechaFinal = new Date("2026-06-09 13:59:59");
+
+  const dias = document.querySelector(".dia .num");
+  const horas = document.querySelector(".hora .num");
+  const minutos = document.querySelector(".minutos .num");
+  const segundos = document.querySelector(".segundos .num");
+
+  function actualizarCuenta() {
+    const ahora = new Date();
+    const diferencia = fechaFinal - ahora;
+
+    if (diferencia <= 0) {
+      document.querySelector(".count-down").innerHTML =
+        "<h3>🎉 Promo terminada, espera la próxima.</h3>";
+      clearInterval(intervalo);
+      return;
+    }
+
+    const d = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+    const h = Math.floor((diferencia / (1000 * 60 * 60)) % 24);
+    const m = Math.floor((diferencia / (1000 * 60)) % 60);
+    const s = Math.floor((diferencia / 1000) % 60);
+
+    dias.textContent = String(d).padStart(2, "0");
+    horas.textContent = String(h).padStart(2, "0");
+    minutos.textContent = String(m).padStart(2, "0");
+    segundos.textContent = String(s).padStart(2, "0");
+  }
+
+  actualizarCuenta();
+  const intervalo = setInterval(actualizarCuenta, 1000);
+</script>
 <style>
   .InitialSection {
     padding: 0px 54px;
@@ -126,7 +164,7 @@ import InitialSection from "../components/InitialSection.astro";
     justify-content: space-around;
     padding: 30px 30px;
     margin: 0px auto;
-    max-width: 800px;
+    max-width: 900px;
     background-color: #f3d2de;
     background:
       radial-gradient(circle at 20% 25%, #f8e8ef 0%, transparent 35%),
