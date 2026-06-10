@@ -1,0 +1,248 @@
+---
+import InitialSection from "../components/InitialSection.astro";
+---
+
+<section class="redes-section" id="Contacto">
+ 
+ 
+  <InitialSection
+    TypeSection="Siguenos"
+    title="Nuestras Redes"
+    titlespan="Sociales"
+    description="Siguenos en todas nuestras redes sociales"
+  />
+
+  <div class="redes-container">
+    <a
+      href="https://www.facebook.com/profile.php?id=100057420521559&locale=es_LA"
+      target="_blank"
+      rel="noopener"
+      class="red-card"
+    >
+      <div class="icon-wrapper facebook">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            d="M18 2h-3a6 6 0 0 0-6 6v4h-2v4h2v6h4v-6h3l1-4h-4V8a2 2 0 0 1 2-2h1z"
+          ></path>
+        </svg>
+      </div>
+      <h3>Facebook</h3>
+      <p>@HOCO STRAWBERRIES</p>
+    </a>
+
+    <a
+      href="https://www.instagram.com/mrboneless1/"
+      target="_blank"
+      rel="noopener"
+      class="red-card"
+    >
+      <div class="icon-wrapper instagram">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <circle cx="17.5" cy="6.5" r="1.5"></circle>
+        </svg>
+      </div>
+      <h3>Instagram</h3>
+      <p>@HOCO_OF</p>
+    </a>
+
+    <a href="tel:8611260098" class="red-card">
+      <div class="icon-wrapper phone">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+          ></path>
+        </svg>
+      </div>
+      <h3>Teléfono</h3>
+      <p>(861) 126 0098</p>
+    </a>
+  </div>
+
+  <!-- <div class="email-section">
+    <a href="mailto:contacto@mrboneless.com">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+      </svg>
+      <span>contacto@mrboneless.com</span>
+    </a>
+  </div> -->
+</section>
+
+<style>
+  .redes-section {
+    width: 100%;
+  }
+
+  .redes-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px auto 40px;
+    padding: 0 0px;
+    gap: 2rem ;
+  }
+
+
+  .red-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    width: 250px;
+
+  }
+
+  .red-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  }
+
+  .icon-wrapper {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    color: #c8005a;  }
+
+  .icon-wrapper svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .red-card h3 {
+    font-size: 1.3rem;
+    margin: 15px 0 8px;
+    color: #000;
+    font-weight: 600;
+  }
+
+  .red-card p {
+    font-size: 0.95rem;
+    color: #666;
+    text-align: center;
+    margin: 0;
+  }
+
+  .email-section {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .email-section a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    color: #ff6600;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+  }
+
+  .email-section a:hover {
+    color: #ff8533;
+  }
+
+  .email-section svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* Responsivo para tabletas */
+  @media (max-width: 768px) {
+    .redes-container {
+      
+      gap: 20px;
+      margin: 40px auto 30px;
+      padding: 0 15px;
+    }
+
+    .red-card {
+      padding: 30px 20px;
+    }
+
+    .icon-wrapper {
+      width: 60px;
+      height: 60px;
+    }
+
+    .red-card h3 {
+      font-size: 1.1rem;
+    }
+
+    .email-section a {
+      font-size: 0.95rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  /* Responsivo para móviles */
+  @media (max-width: 480px) {
+    .redes-container {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 15px;
+      margin: 30px auto 20px;
+      padding: 0 10px;
+    }
+
+    .red-card {
+      padding: 25px 15px;
+    }
+
+    .icon-wrapper {
+      width: 50px;
+      height: 50px;
+    }
+
+    .icon-wrapper svg {
+      width: 30px;
+      height: 30px;
+    }
+
+    .red-card h3 {
+      font-size: 1rem;
+    }
+
+    .red-card p {
+      font-size: 0.9rem;
+    }
+
+    .email-section a {
+      font-size: 0.85rem;
+      gap: 8px;
+    }
+  }
+</style>

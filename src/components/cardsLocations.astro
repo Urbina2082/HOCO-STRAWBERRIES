@@ -1,0 +1,57 @@
+---
+const { sucursal, description, horario } = Astro.props;
+---
+
+<article class="branch-card">
+  <div class="branch-icon">📍</div><h3>{sucursal}</h3><p>
+    {description}
+  </p><small>{horario}</small>
+</article>
+
+<style>
+  .branch-card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 30px 26px;
+    background: var(--surface);
+    box-shadow: var(--shadow-card);
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .branch-card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--brand), #ff85b8);
+  }
+  .branch-card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 6px;
+  }
+
+  .branch-card p {
+    color: var(--muted);
+    font-size: 0.88rem;
+    margin-bottom: 14px;
+  }
+
+  .branch-card small {
+    display: inline-block;
+    color: var(--brand);
+    font-weight: 600;
+    font-size: 0.82rem;
+    background: var(--brand-light);
+    padding: 5px 12px;
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--brand-mid);
+  }
+</style>

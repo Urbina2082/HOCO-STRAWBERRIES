@@ -1,0 +1,290 @@
+---
+import InitialSection from "../components/InitialSection.astro";
+---
+
+<div class="Flash">
+  <div class="InitialSection">
+    <InitialSection
+      TypeSection="FRESA FLASH"
+      title="Promocion"
+      titlespan="Flash"
+      description="Una muestra visual del estilo HOCO strawberries."
+    />
+  </div>
+  <!-- pq aqui no vas  a sacar nada -->
+
+  <div class="containerr">
+    <div class="promo">
+      <span class="sect">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="12"
+          height="10"
+          viewBox="0 0 24 24"
+          fill="none"
+        >
+          <path
+            d="M13.5 2L5 13H11L9.5 22L19 10H13L13.5 2Z"
+            stroke="#FFFFFF"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg> PROMOCION</span
+      >
+      <h3>Fresa Flash</h3>
+      <p>Por tiempo limitado!</p>
+      <div class="info">
+        <div class="title">
+          <h4>2 Fresas con crema <br /><b>al precio de 1</b></h4>
+          <button>!Aprovecha ahora!</button>
+        </div>
+        <div class="imagenn">
+          <img src="/prod.avif" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="tiempo">
+      <span>La promo termina en:</span>
+      <div class="count-down">
+        <div class="dia cuad">
+          <div class="num">08</div>
+          <p>Dias</p>
+        </div>
+        <p class="puntito">:</p>
+        <div class="hora cuad">
+          <div class="num">02</div>
+          <p>Horas</p>
+        </div>
+        <p class="puntito">:</p>
+        <div class="minutos cuad">
+          <div class="num">22</div>
+          <p>Minutos</p>
+        </div>
+        <p class="puntito">:</p>
+        <div class="segundos cuad">
+          <div class="num">12</div>
+          <p>Segundos</p>
+        </div>
+      </div>
+
+      <div class="sucursales">
+        <span>Disponible en:</span>
+        <div class="suc">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M12 22C12 22 19 15.5 19 9.5C19 5.35786 15.866 2 12 2C8.13401 2 5 5.35786 5 9.5C5 15.5 12 22 12 22Z"
+              stroke="#ea186f"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"></path>
+            <circle cx="12" cy="9.5" r="2.5" stroke="#ea186f" stroke-width="2"
+            ></circle>
+          </svg>
+          <p>Sucursal Centro</p>
+        </div>
+        <div class="suc">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M12 22C12 22 19 15.5 19 9.5C19 5.35786 15.866 2 12 2C8.13401 2 5 5.35786 5 9.5C5 15.5 12 22 12 22Z"
+              stroke="#ea186f"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"></path>
+            <circle cx="12" cy="9.5" r="2.5" stroke="#ea186f" stroke-width="2"
+            ></circle>
+          </svg>
+          <p>Sucursal Norte</p>
+        </div>
+        <h5>Valido en ambas sucursales</h5>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  .InitialSection {
+    padding: 0px 54px;
+  }
+  .containerr {
+    box-shadow: 2px 2px 20px 10px #d7025b29;
+    border: 1px solid #fd000071;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-radius: 25px;
+    justify-content: space-around;
+    padding: 30px 30px;
+    margin: 0px auto;
+    max-width: 800px;
+    background-color: #f3d2de;
+    background:
+      radial-gradient(circle at 20% 25%, #f8e8ef 0%, transparent 35%),
+      radial-gradient(circle at 65% 45%, #e78ab2 0%, transparent 40%),
+      radial-gradient(circle at 85% 20%, #e6007e 0%, transparent 35%),
+      radial-gradient(circle at 25% 85%, #e7b6c9 0%, transparent 45%),
+      radial-gradient(circle at 90% 90%, #c40063 0%, transparent 40%), #f3d2de;
+  }
+  .promo span {
+    background-color: #ea186f;
+    padding: 8px 15px;
+    border-radius: 15px;
+    color: white;
+    font-size: 12px;
+  }
+  .promo h3 {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    color: #d7025a;
+    font-size: 64px;
+    margin: 15px 0px;
+  }
+  .promo p {
+    margin: 0;
+    color: #00000091;
+  }
+  .promo h4 {
+    font-size: 25px;
+  }
+  .promo b {
+    color: #d7025a;
+  }
+  .promo button {
+    padding: 9px 25px;
+    border: 1px solid rgba(255, 192, 203, 0);
+    border-radius: 15px;
+    background-color: #ea2d79;
+    color: white;
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .imagenn {
+    width: 120px;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+  /* ------------------------TIEMPO------------------------------ */
+  .tiempo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid rgb(248, 230, 233);
+    background-color: #f7f2f36d;
+    border-radius: 25px;
+    padding: 20px 40px;
+    align-items: center;
+  }
+  .tiempo span {
+    color: #d7025a;
+    font-weight: 600;
+  }
+  .count-down {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0px;
+    gap: 0.5rem;
+  }
+  .puntito {
+    font-weight: 600;
+    color: #d7025a;
+  }
+  .num {
+    background: #f9d7dd00;
+    color: #d7025a;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 22px;
+  }
+
+  /* ------------------Sucursales------------------- */
+  .sucursales {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1rem;
+  }
+
+  .suc {
+    display: flex;
+    align-items: center;
+    padding: 4px 20px;
+    border-radius: 20px;
+    border: 1px solid #d7025b82;
+    gap: 1rem;
+  }
+
+  .suc p {
+    margin: 0px;
+    font-size: 14px;
+    color: #d7025a;
+    font-weight: 500;
+  }
+
+  h5 {
+    padding: 10px 20px;
+    background: #f9d7dd;
+    border-radius: 25px;
+    color: #d7025a;
+    font-size: 12px;
+    margin: 0px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .containerr {
+      margin: 0px 1rem;
+      padding: 30px 10px;
+
+      text-align: center;
+    }
+    .promo h3 {
+      font-size: 49px;
+    }
+
+    h4 {
+      margin: 1rem 0rem;
+    }
+
+    .info {
+      justify-content: center;
+    }
+    .promo p {
+      color: #fffffff7;
+    }
+    .tiempo {
+      padding: 20px 25px;
+    }
+    .count-down {
+      gap: 0.5rem;
+    }
+
+    .num {
+      padding: 5px;
+      font-size: 29px;
+    }
+
+    .cuad p {
+      font-size: 12px;
+    }
+  }
+</style>

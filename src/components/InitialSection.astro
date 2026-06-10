@@ -1,0 +1,49 @@
+---
+const { TypeSection, title, titlespan, description } = Astro.props;
+---
+
+<div class="initial">
+  <span>{TypeSection}</span>
+  <h2>{title} <span>{titlespan}</span></h2>
+  <p>{description}</p>
+</div>
+
+<style>
+  .initial {
+    margin: 3rem 0rem;
+    text-align: center;
+  }
+
+  .initial span {
+    color: var(--brand);
+    background: var(--brand-light);
+    padding: 8px 15px;
+    font-weight: 700;
+    border-radius: 20px;
+    border: var(--brand-mid) 1px solid;
+    font-size: 0.92rem;
+  }
+
+  h2 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.7rem, 4vw, 3rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 10px;
+  }
+  .initial h2 span {
+    background: linear-gradient(90deg, #e7b6c9, #e6007e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    border: #c8005a00 1px solid;
+    padding: 0px;
+    font-size: clamp(2.7rem, 4vw, 3rem);
+    font-style: italic;
+  }
+
+  .initial p {
+    color: #8a6474;
+    font-size: 0.96rem;
+  }
+</style>

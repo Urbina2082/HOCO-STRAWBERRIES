@@ -1,0 +1,293 @@
+---
+
+
+---
+
+<footer class="footer">
+  <div class="footer-content">
+    <!-- Sección Logo y Descripción -->
+    <div class="footer-section logo-section">
+      <div class="logoo">
+          <img class="logo" src="/logo.avif" alt="Logo MR. Boneless" width="120">
+      </div>
+      
+      
+    </div>
+
+    <!-- Sección Navegación -->
+    <div class="footer-section">
+      <h4>NAVEGACIÓN</h4>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sucursales">Sucursales</a></li>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#promociones">FRESA FLAS</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+
+    <!-- Sección Sucursales -->
+    <div class="footer-section">
+      <h4>SUCURSALES</h4>
+      <ul>
+        <li><a href="#sucursales">📌 SUCURSAL VENUSTIANO</a></li>
+        <li><a href="#sucursales">📌 SUCURSAL CENTRO</a></li>
+        
+      </ul>
+    </div>
+
+    <!-- Sección Horario -->
+    <div class="footer-section">
+      <h4>HORARIO</h4>
+      <div class="horario-item">
+        <p class="dia">Martes - Sábado</p>
+        <p class="hora">10:00 AM - 10:00 PM</p>
+      </div>
+      <div class="horario-item">
+        <p class="dia">Lunes</p>
+        <p class="hora">CERRADO </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Línea divisora -->
+  <div class="footer-divider"></div>
+
+  <!-- Footer bottom -->
+  <div class="footer-bottom">
+    <p>&copy; 2026 Hoco Strawberries. Todos los derechos reservados.</p>
+    
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background: var(--brand-light);
+    color: #000000;
+    padding: 60px 20px 30px;
+    margin: 5rem 0rem 0rem;
+  }
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    max-width: 1400px;
+    margin: 0 auto 40px;
+  }
+
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    border-radius: 50%;
+  }
+  .logo-section {
+    align-items: flex-start;
+  }
+
+ 
+
+  .footer-section h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 10px 0 15px;
+    color:#c8005a;
+  }
+
+  .footer-section h4 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin: 0 0 15px;
+       color: #c8005a;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .footer-section p {
+    color: #000000db;
+    font-size: 0.92rem;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-section ul li {
+    margin-bottom: 10px;
+    
+  }
+
+  .footer-section ul li a {
+    color: #000000a5;
+    text-decoration: none;
+    font-size: .8rem;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+
+  
+  .horario-item {
+    margin-bottom: 20px;
+  }
+
+  .horario-item .dia {
+    color: #000000db;
+    font-size: 0.95rem;
+    margin: 0 0 5px;
+  }
+
+  .horario-item .hora {
+      color: #c8005a;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .footer-divider {
+    border-top: 1px solid #333;
+    max-width: 1400px;
+    margin: 0 auto 30px;
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+
+  .footer-bottom p {
+    color: #666;
+    font-size: 0.85rem;
+    margin: 0;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 20px;
+  }
+
+  .social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    color: #666;
+    transition: color 0.3s ease;
+  }
+
+  .social-links a:hover {
+    color: #ff6600;
+  }
+
+  .social-links svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* Responsivo para tabletas */
+  @media (max-width: 768px) {
+    .footer {
+      padding: 40px 15px 25px;
+    }
+
+    .footer-content {
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+
+    .footer-bottom {
+      flex-direction: column;
+      gap: 20px;
+      padding: 15px 0;
+    }
+
+    .footer-bottom p {
+      text-align: center;
+    }
+
+    .social-links {
+      justify-content: center;
+    }
+  }
+
+  /* Responsivo para móviles */
+  @media (max-width: 480px) {
+    .footer {
+      padding: 30px 30px 20px;
+    }
+
+    .footer-section ul li a {
+    color: #000000a5;
+   
+    font-size: .9rem;
+   
+   
+  }
+
+    .footer-content {
+      grid-template-columns: 1fr;
+      gap: 25px;
+      margin-bottom: 25px;
+    }
+
+    .logo-section {
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer-section h3 {
+      
+    }
+
+    
+
+   
+
+    .footer-divider {
+      margin: 0 auto 20px;
+    }
+
+    .footer-bottom {
+      gap: 15px;
+    }
+
+    .footer-bottom p {
+      font-size: 0.8rem;
+    }
+
+    .social-links {
+      gap: 15px;
+    }
+
+    .social-links a {
+      width: 28px;
+      height: 28px;
+    }
+
+    .social-links svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+</style>

@@ -1,0 +1,40 @@
+---
+import InitialSection from "../components/InitialSection.astro";
+import CardsLocations from "../components/cardsLocations.astro";
+---
+
+<section class="locations">
+  <InitialSection 
+    TypeSection="ECUENTRANOS"
+    title="Nuestras"
+    titlespan="Sucursales"
+    description="Dos espacios pensados para que disfrutes al máximo."
+  />
+
+  <div class="branch-grid">
+    <CardsLocations
+      sucursal="Sucursal Centro"
+      description="Zona Centro · horario extendido"
+      horario="Lun a Dom · 1:00 pm – 10:00 pm"
+    />
+    <CardsLocations
+      sucursal="Sucursal Centro"
+      description="Zona Centro · horario extendido"
+      horario="Lun a Dom · 1:00 pm – 10:00 pm"
+    />
+  </div>
+</section>
+
+<style>
+  .branch-grid {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  .locations {
+    margin: 88px 15px;
+
+    
+  }
+</style>

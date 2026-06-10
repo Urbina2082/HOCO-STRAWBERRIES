@@ -1,0 +1,74 @@
+---
+import InitialSection from "../components/InitialSection.astro";
+import { Image } from "astro:assets";
+
+import gal1 from "../assets/gal-1.jpg";
+import gal2 from "../assets/gal-2.jpg";
+import gal3 from "../assets/gal-3.jpg";
+import gal4 from "../assets/gal-4.jpg";
+import gal5 from "../assets/gal-5.jpg";
+import gal6 from "../assets/gal-6.jpg";
+import gal7 from "../assets/gal-7.jpg";
+import gal8 from "../assets/gal-8.jpg";
+import gal9 from "../assets/gal-9.jpg";
+import gal10 from "../assets/gal-10.jpg";
+---
+
+<section>
+  <InitialSection
+    TypeSection="ANTOJATE"
+    title="Nuestra"
+    titlespan="Galeria"
+    description="Una muestra visual del estilo HOCO strawberries."
+  />
+
+  <div class="gall">
+    <Image src={gal1} alt="Imagen 1" class="gal_img" />
+    <Image src={gal2} alt="Imagen 2" class="gal_img" />
+    <Image src={gal3} alt="Imagen 3" class="gal_img" />
+    <Image src={gal4} alt="Imagen 4" class="gal_img" />
+    <Image src={gal5} alt="Imagen 5" class="gal_img" />
+    <Image src={gal6} alt="Imagen 6" class="gal_img" />
+    <Image src={gal7} alt="Imagen 7" class="gal_img" />
+    <Image src={gal8} alt="Imagen 8" class="gal_img" />
+    <Image src={gal9} alt="Imagen 9" class="gal_img" />
+    <Image src={gal10} alt="Imagen 10" class="gal_img" />
+  </div>
+</section>
+
+<style>
+  .gall {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    margin: 0px 54px;
+  }
+
+  .gal_img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .gall {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 20px;
+      padding: 15px;
+    }
+
+    .gal_img {
+      height: 250px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .gall {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 20px;
+      padding: 10px;
+      margin: 0px 14px;
+    }
+  }
+</style>
