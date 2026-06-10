@@ -3,7 +3,7 @@ import InitialSection from "../components/InitialSection.astro";
 import { menu } from "../Data/menu";
 ---
 
-<section>
+<section id="Menu">
   <!-- Sección del titulo del menú -->
   <InitialSection
     TypeSection="LO QUE MAS PEDIMOS"
@@ -13,7 +13,7 @@ import { menu } from "../Data/menu";
   />
 
   <!-- Contenedor principal del menú -->
-  <div class="menuu">
+  <div class="menuu" >
     <!-- Botones de las categorías (Smoothies, Aguas, etc) -->
     <div class="butss">
       {menu.map((item) => <button class="tab">{item.name}</button>)}
